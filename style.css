@@ -1,0 +1,97 @@
+:root {
+    font-size: 16px; /* 1rem = 16px */
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url("dipsik.jpg");
+    background-image: image-set(
+      url("dipsik.webp") 1x,
+      url("dipsik.webp") 2x,
+      url("dipsik.jpg") 1x,
+      url("dipsik.jpg") 2x
+    );
+    color: #333;
+  }
+  
+  .container {
+    max-width: 37.5rem; /* 600px */
+    margin: 0 auto;
+    padding: 1.25rem; /* 20px */
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 9.375rem; /* 150px */
+    height: 9.375rem; /* 150px */
+    border-radius: 50%;
+    margin-bottom: 0.9375rem; /* 15px */
+    border: 0.1875rem solid #FF4500; /* 3px */
+  }
+  
+  h1 {
+    color: #ff5a5f;
+    margin-bottom: 0.625rem; /* 10px */
+  }
+  
+  p {
+    color: #2d2d2d;
+    margin-bottom: 1.875rem; /* 30px */
+  }
+  
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem; /* 15px */
+  }
+  
+  .btn {
+    padding: 0.9375rem 1.5625rem; /* 15px 25px */
+    text-decoration: none;
+    color: white;
+    border-radius: 1.5625rem; /* 25px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem; /* 10px */
+    transition: transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    transform: translateY(-0.1875rem); /* 3px */
+  }
+  
+  .tiktok {
+    background-color: #000000;
+  }
+  
+  .instagram {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  }
+  
+  .map-container {
+    margin-top: 1.875rem; /* 30px */
+    border-radius: 0.9375rem; /* 15px */
+    overflow: hidden;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px 8px */
+  }
+  
+  iframe {
+    width: 100%;
+    height: 18.75rem; /* 300px */
+    border: none;
+  }
+  
+  /* Media Query untuk layar kecil (max-width: 480px / 30rem) */
+  @media (max-width: 30rem) {
+    .container {
+      padding: 0.9375rem; /* 15px */
+    }
+    
+    iframe {
+      height: 12.5rem; /* 200px */
+    }
+  }
+  
